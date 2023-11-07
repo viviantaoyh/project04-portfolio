@@ -46,7 +46,7 @@ const ExperienceCard = ({ experience }) => {
 
         {/* Company name */}
         <p
-          className='text-accent-dark text-[16px] font-bold'
+          className='text-tertiary dark:text-accent-dark text-[16px] font-bold'
           style={{ margin: 0 }}
         >
           {experience.company_name}

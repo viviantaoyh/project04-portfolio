@@ -31,7 +31,7 @@ const Hero = () => {
       <Suspense fallback={<CanvasLoader />}>
 
       <section className="bg-black-dark relative w-full h-screen p-16 flex justify-center items-center overflow-hidden">
-        <div className="absolute bottom-0 w-full h-16 bg-gradient-to-top from-purple-900 to-transparent z-10"></div>
+        <div className="absolute bottom-0 w-full h-16 z-10"></div>
 
         <img src={stars} id="stars" className="absolute top-0 left-[calc(50% - var(--scrollValue)/4)] w-full h-full object-cover pointer-events-none" style={{ left: `${scrollValue * 0.25}px` }} />
 

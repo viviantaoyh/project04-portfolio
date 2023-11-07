@@ -96,29 +96,29 @@ const Contact = () => {
         className='flex-[0.75] bg-secondary dark:bg-primary p-8 rounded-2xl shadow-2xl shadow-indigo-500/50'
       >
         {/* header */}
-        <p className="sm:text-[18px] text-[14px] text-black-light display-font uppercase tracking-wider">Get in touch</p>
+        <p className="sm:text-[18px] text-[14px] text-white dark:text-black-light display-font uppercase tracking-wider">Get in touch</p>
         <h3 className="text-black-light font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Contact.</h3>
 
           <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <IoLocationSharp className="text-xl md:text-2xl text-primary dark:text-black" />
-            <p className="text-base md:text-lg">
+            <p className="md:text-lg text-white dark:text-black">
                Melbourne
             </p>
           </div>
 
           <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <IoIosMail className="text-xl md:text-2xl text-primary dark:text-black" />
-            <a href="mailto:viviantao.dev@gmail.com" className="text-base md:text-lg hover:underline underline-offset-4">viviantao.dev@gmail.com</a>
+            <a href="mailto:viviantao.dev@gmail.com" className="text-white dark:text-black md:text-lg hover:underline underline-offset-4">viviantao.dev@gmail.com</a>
           </div>
           
           <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <IoLogoGithub className="text-xl md:text-2xl text-primary dark:text-black" />
-            <a href="https://github.com/viviantaoyh" target="_blank" className="text-base md:text-lg hover:underline underline-offset-4">github.com/viviantaoyh</a>
+            <a href="https://github.com/viviantaoyh" target="_blank" className="text-white dark:text-black md:text-lg hover:underline underline-offset-4">github.com/viviantaoyh</a>
           </div>
           
           <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <IoLogoLinkedin className="text-xl md:text-2xl text-primary dark:text-black" />
-            <a href="https://www.linkedin.com/in/viviantao/" target="_blank" className="text-base md:text-lg hover:underline underline-offset-4">linkedin.com/in/viviantao</a>
+            <a href="https://www.linkedin.com/in/viviantao/" target="_blank" className="text-white dark:text-black md:text-lg hover:underline underline-offset-4">linkedin.com/in/viviantao</a>
           </div>
 
         {/* contact form */}
@@ -131,7 +131,7 @@ const Contact = () => {
           <label className='flex flex-col gap-2'>
             <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <AiOutlineSend className="text-xl md:text-2xl text-primary dark:text-black" />
-            <p className="text-base md:text-lg">Send me a message:</p>
+            <p className="text-white dark:text-black md:text-lg">Send me a message:</p>
           </div>
             <input
               type='text'

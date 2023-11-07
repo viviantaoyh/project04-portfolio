@@ -7,14 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#F4DCFE",  // current background color, heading
-        secondary: "#B8B0E5",  // inactive words/ sub text
-        tertiary: "#FFD88E",  // highlights
+        primary: "#F4DCFE",  // main-dark-mode
+        secondary: "#B8B0E5",  // main-light-mode
+        tertiary: "#734BFB",  // highlights in light mode
+        "accent-dark": "#EFFF61", // highlights in dark mode
         "white-light": "#FCFCFD", // light mode background color
         "black-light": "#333333", // light mode text color
         "black-dark": "#1F2230",  // dark mode background color
         "white-dark": "#F5F6F8",  // dark mode text color
-        "accent-dark": "#EFFF61", // accent in dark mode
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",

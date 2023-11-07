@@ -33,12 +33,12 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
-    },
-    {
       id: "projects",
       title: "Projects",
+    },
+    {
+      id: "work",
+      title: "Work",
     },
     {
       id: "contact",
@@ -87,12 +87,16 @@ import {
       icon: reactjs,
     },
     {
-      name: "Express",
-      icon: express,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
+    },
+    {
+      name: "Framer Motion",
+      icon: framer,
+    },
+    {
+      name: "Express",
+      icon: express,
     },
     {
       name: "Node JS",
@@ -117,10 +121,6 @@ import {
     {
       name: "Figma",
       icon: figma,
-    },
-    {
-      name: "Framer Motion",
-      icon: framer,
     },
   ];
   
