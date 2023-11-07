@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
-import darkLogo from "./3logo.svg";
+import darkLogo from "./dark-logo.png";
+import lightLogo from "./light-logo.png";
 import backend from "./backend.png";
 import debug from "./debugging.png";
 import mobile from "./mobile.png";
@@ -37,8 +37,8 @@ import ServoLight from "./projects/Servo-Light.png";
 import ServoDark from "./projects/Servo-Dark.png";
 
 export {
-  logo,
   darkLogo,
+  lightLogo,
   backend,
   debug,
   mobile,

@@ -14,9 +14,10 @@
   color-scheme: light;
 }
 
-/* html {
-  scroll-snap-type: y mandatory;
-} */
+html {
+  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory; */
+}
 
 /* Apply "Merriweather" font to specific elements or classes */
 .display-font {

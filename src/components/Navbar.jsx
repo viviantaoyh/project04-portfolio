@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { logo, darkLogo } from '../assets'
+import { darkLogo, lightLogo } from '../assets'
 
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-white-light dark:bg-black-dark`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 bg-white-light dark:bg-black-dark`}>
 
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
 
@@ -33,7 +33,7 @@ const Navbar = () => {
           }}
         >
           <img 
-            src={isdarkMode? darkLogo : logo} 
+            src={isdarkMode? darkLogo : lightLogo} 
             alt="logo" 
             className="w-10 h-10 object-contain" />
           {/* <p className="text-black-light dark:text-white-dark text-[18px] font-bold cursor-pointer hover:text-secondary dark:hover:text-secondary">Vivian Tao.</p> */}
