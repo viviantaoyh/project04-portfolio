@@ -1,10 +1,9 @@
 import {
     mobile,
     backend,
-    creator,
+    debug,
     web,
     javascript,
-    typescript,
     python,
     html,
     css,
@@ -17,13 +16,14 @@ import {
     figma,
     postgres,
     framer,
-    meta,
     opc,
     agb,
     freelance,
     carrent,
-    jobit,
-    tripguide,
+    ticTacToe,
+    wishJourney,
+    ServoLight,
+    ServoDark,
     threejs,
   } from "../assets";
   
@@ -37,7 +37,7 @@ import {
       title: "Work",
     },
     {
-      id: "works",
+      id: "projects",
       title: "Projects",
     },
     {
@@ -61,7 +61,7 @@ import {
     },
     {
       title: "Quality Assurance",
-      icon: creator,
+      icon: debug,
     },
   ];
   
@@ -167,38 +167,93 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
   const projects = [
     {
-      name: "Car Rent",
+      name: "Servo App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "The Servo App, a collaborative project by a team of five, focuses on creating an intuitive Single Page Application (SPA) for locating petrol stations via geographical coordinates. It utilizes JavaScript, Node.js, Express, Postgres, and RESTful APIs to offer users a comprehensive experience, pinpointing fuel stations and providing insights into fuel pricing and station statistics.",
+      tags: [
+        {
+          name: "node.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "express",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "postgres",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "css",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: ServoLight,
+      source_code_link: "https://github.com/viviantaoyh/project03-servo-app",
+      demo_link: "https://github.com/viviantaoyh/project03-servo-app"
+    },
+    {
+      name: "WishJourney",
+      description:
+        "WishJourney, a visionary platform for travelers and dreamers, combines technology and wanderlust. Using JavaScript, Node.js, and Postgres, it transforms travel aspirations into visual boards, going beyond traditional lists. Meticulously crafted features help users plan and experience their adventures. Dive in and let your wanderer's heart find its compass.",
+      tags: [
+        {
+          name: "node.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "express",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "postgres",
+          color: "green-text-gradient",
+        },
+        {
+          name: "ejs",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "css",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: wishJourney,
+      source_code_link: "https://github.com/viviantaoyh/project02-wishjourney",
+      demo_link: "https://project02-wishjourney.onrender.com/"
+    },
+    {
+      name: "Tic-Tac-Toe",
+      description:
+        "This project presents a contemporary take on the classic 'Tic-Tac-Toe' game. Crafted with HTML, CSS, and JavaScript, it seamlessly combines modern gaming experience with the enduring appeal of the original. It's easy to play: select a cell, take turns marking 'X' or 'O,' and aim to achieve a row of three. Enjoy this blend of nostalgia and modern gaming convenience. ",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: ticTacToe,
+      source_code_link: "https://github.com/viviantaoyh/project01-tic-tac-toe",
+      demo_link: "https://viviantaoyh.github.io/project01-tic-tac-toe/"
+    },
+    {
+      name: "Portfolio",
+      description:
+        "Coming Soon.",
       tags: [
         {
           name: "react",
@@ -214,50 +269,27 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/viviantaoyh/project04-portfolio",
+      demo_link: "https://github.com/"
+    },
+  ];
+
+  const contacts = [
+    {
+      id: "email",
+      name: "viviantao.dev@gmail.com",
+      url: "mailto:viviantao.dev@gmail.com",
     },
     {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      id: "githuub",
+      name: "github.com/viviantaoyh",
+      url: "https://github.com/viviantaoyh",
     },
     {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      id: "linkedin",
+      name: "linkedin.com/in/viviantao",
+      url: "https://www.linkedin.com/in/viviantao/",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects, contacts };

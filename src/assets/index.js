@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 import darkLogo from "./3logo.svg";
 import backend from "./backend.png";
-import creator from "./creator.png";
+import debug from "./debugging.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
+import open from "./open.png";
+
 
 import css from "./tech/css.png";
 import postgres from "./tech/postgres.png";
@@ -24,26 +24,27 @@ import threejs from "./tech/threejs.svg";
 import framer from "./tech/framer.png";
 import python from "./tech/python.png"
 
-import meta from "./company/meta.png";
 import freelance from "./company/freelance.png";
 import opc from "./company/opc.png";
 import agb from "./company/agb.png";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import picture from "./picture.jpg";
+
+import ticTacToe from "./projects/Tic-Tac-Toe.png";
+import wishJourney from "./projects/wishJourney.png";
+import ServoLight from "./projects/Servo-Light.png";
+import ServoDark from "./projects/Servo-Dark.png";
 
 export {
   logo,
   darkLogo,
   backend,
-  creator,
+  debug,
   mobile,
   web,
   github,
-  menu,
-  close,
+  open,
   css,
   postgres,
   figma,
@@ -59,12 +60,13 @@ export {
   typescript,
   threejs,
   framer,
-  meta,
   freelance,
   opc,
   agb,
   carrent,
-  jobit,
-  tripguide,
+  ticTacToe,
+  wishJourney,
+  ServoLight,
+  ServoDark,
   picture
 };

@@ -38,7 +38,7 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
+    <div>
 
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
@@ -52,7 +52,14 @@ const About = () => {
         >
           I'm a junior software developer based in Melbourne. After dedicating 4 years in accounting as a tax accountant and accounts officer, I embraced a new journey into software engineering. This shift is fueled by my passion for technology and recognizing that my meticulous nature could bring fresh insights to tech. <br/> <br/>
 
-          I deeply value a balanced career, both challenging and rewarding. My colleagues know me as a problem-solver, a quick learner, and a friendly team member. Such traits, combined with my background spanning finance and technology, empower me to craft software solutions that resonate with real needs, harmoniously merging traditional expertise with contemporary innovation. With each day, I'm presented with a fresh opportunity to learn, innovate, and leave a lasting impact.
+          I deeply value a balanced career, both challenging and rewarding. My colleagues know me as a problem-solver, a quick learner, and a friendly team member. Such traits, combined with my background spanning finance and technology, empower me to craft software solutions that resonate with real needs, harmoniously merging traditional expertise with contemporary innovation. With each day, I'm presented with a fresh opportunity to learn, innovate, and leave a lasting impact. <br />
+
+        <button
+            type="button"
+            className='btn mt-10 animate-bounce'
+        >
+            <a href="">View Resume</a>
+        </button>
         </motion.p>
 
         <motion.p
@@ -68,7 +75,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

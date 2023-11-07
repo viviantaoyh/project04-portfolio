@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { BsMoonStars, BsSun } from "react-icons/bs"
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { logo, darkLogo, menu, close } from '../assets'
+import { logo, darkLogo } from '../assets'
 
 
 const Navbar = () => {
@@ -70,12 +71,14 @@ const Navbar = () => {
         <div className="sm:hidden flex flex-1 justify-end items-center">
 
           {/* Toggle Button */}
-          <img 
-            src={toggle ? close : menu} 
-            alt="menu" 
-            className="w-[28px] h-[28px] object-contain cursor-pointer dark:bg-white-dark"
-            onClick={() => setToggle(!toggle)} 
-          />
+          {isdarkMode 
+          ? (toggle 
+              ? <AiOutlineClose className="w-[28px] h-[28px] object-contain cursor-pointer dark:text-white" onClick={() => setToggle(!toggle)}/> 
+              : <AiOutlineMenu className="w-[28px] h-[28px] object-contain cursor-pointer dark:text-white" onClick={() => setToggle(!toggle)}/>) 
+          : (toggle 
+              ? <AiOutlineClose className="w-[28px] h-[28px] object-contain cursor-pointer" onClick={() => setToggle(!toggle)}/> 
+              : <AiOutlineMenu className="w-[28px] h-[28px] object-contain cursor-pointer" onClick={() => setToggle(!toggle)}/>)} 
+
 
           {/* Toggle NavLinks */}
           <div className={`${!toggle ? 'hidden' : 'flex' } p-6  black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl`}>

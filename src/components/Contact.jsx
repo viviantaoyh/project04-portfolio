@@ -77,7 +77,7 @@ const Contact = () => {
         {/* <p className="px-3 display-font">
           Built using React, Tailwind CSS, Three.js, and Vercel.
         </p> */}
-        <p className="display-font">&#169; 2023 viviantaoyh</p>
+        <p className="display-font">&#169; 2023 Vivian Tao.</p>
       </footer>
     )
   }
@@ -108,17 +108,17 @@ const Contact = () => {
 
           <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <IoIosMail className="text-xl md:text-2xl text-primary dark:text-black" />
-            <a href="mailto:viviantao.dev@gmail.com" className="text-base md:text-lg">viviantao.dev@gmail.com</a>
+            <a href="mailto:viviantao.dev@gmail.com" className="text-base md:text-lg hover:underline underline-offset-4">viviantao.dev@gmail.com</a>
           </div>
           
           <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <IoLogoGithub className="text-xl md:text-2xl text-primary dark:text-black" />
-            <a href="https://github.com/viviantaoyh" target="_blank" className="text-base md:text-lg">github.com/viviantaoyh</a>
+            <a href="https://github.com/viviantaoyh" target="_blank" className="text-base md:text-lg hover:underline underline-offset-4">github.com/viviantaoyh</a>
           </div>
           
           <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <IoLogoLinkedin className="text-xl md:text-2xl text-primary dark:text-black" />
-            <a href="https://www.linkedin.com/in/viviantao/" target="_blank" className="text-base md:text-lg">linkedin.com/in/viviantao</a>
+            <a href="https://www.linkedin.com/in/viviantao/" target="_blank" className="text-base md:text-lg hover:underline underline-offset-4">linkedin.com/in/viviantao</a>
           </div>
 
         {/* contact form */}
@@ -170,7 +170,7 @@ const Contact = () => {
           {/* submit button */}
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl w-fit text-black-light display-font font-bold shadow-md shadow-white'
+            className='bg-tertiary py-3 px-8 rounded-xl w-fit text-black-light display-font font-bold shadow-md shadow-white animate-bounce'
           >
             {loading ? "Sending..." : "Send"}
           </button>
@@ -184,6 +184,7 @@ const Contact = () => {
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         <EarthCanvas />
+
       </motion.div>
     </div>
 
