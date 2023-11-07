@@ -90,7 +90,7 @@ const ProjectCard = ({
 const Works = () => {
 
   return (
-    <div>
+    <>
       {/* header */}
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
@@ -140,7 +140,7 @@ const Works = () => {
         </Carousel>
       </div> 
 
-    </div>
+    </>
   );
 };
 

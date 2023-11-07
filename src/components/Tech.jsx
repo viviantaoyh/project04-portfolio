@@ -27,7 +27,7 @@ const Skill = ({technology}) => {
 const Tech = () => {
   return (
 
-    <div>
+    <>
     <motion.div variants={textVariant()}>
       <p className={`${styles.sectionSubText} text-center`}>
         What I have experience in
@@ -50,7 +50,7 @@ const Tech = () => {
         
       ))}
     </div>
-    </div>
+    </>
   );
 };
 

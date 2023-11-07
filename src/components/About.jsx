@@ -38,7 +38,7 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <div>
+    <>
 
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
@@ -56,7 +56,7 @@ const About = () => {
 
         <button
             type="button"
-            className='btn mt-10 animate-bounce'
+            className='btn mt-10 animate-bounce font-bold'
         >
             <a href="">View Resume</a>
         </button>
@@ -75,7 +75,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

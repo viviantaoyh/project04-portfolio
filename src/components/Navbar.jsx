@@ -36,7 +36,7 @@ const Navbar = () => {
             src={isdarkMode? darkLogo : logo} 
             alt="logo" 
             className="w-10 h-10 object-contain" />
-          <p className="text-black-light dark:text-white-dark text-[18px] font-bold cursor-pointer hover:text-secondary dark:hover:text-secondary">Vivian Tao.</p>
+          {/* <p className="text-black-light dark:text-white-dark text-[18px] font-bold cursor-pointer hover:text-secondary dark:hover:text-secondary">Vivian Tao.</p> */}
         </Link>
 
         {/* NavLinks */}
