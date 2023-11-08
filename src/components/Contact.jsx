@@ -108,17 +108,17 @@ const Contact = () => {
 
           <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <IoIosMail className="text-xl md:text-2xl text-primary dark:text-black" />
-            <a href="mailto:viviantao.dev@gmail.com" className="text-white dark:text-black md:text-lg hover:underline underline-offset-4">viviantao.dev@gmail.com</a>
+            <a href="mailto:viviantao.dev@gmail.com" className="text-white dark:text-black md:text-lg hover:underline underline-offset-4 cursor-custom">viviantao.dev@gmail.com</a>
           </div>
           
           <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <IoLogoGithub className="text-xl md:text-2xl text-primary dark:text-black" />
-            <a href="https://github.com/viviantaoyh" target="_blank" className="text-white dark:text-black md:text-lg hover:underline underline-offset-4">github.com/viviantaoyh</a>
+            <a href="https://github.com/viviantaoyh" target="_blank" className="text-white dark:text-black md:text-lg hover:underline underline-offset-4 cursor-custom">github.com/viviantaoyh</a>
           </div>
           
           <div className="flex items-center justify-left space-x-5 my-1 w-fit">
             <IoLogoLinkedin className="text-xl md:text-2xl text-primary dark:text-black" />
-            <a href="https://www.linkedin.com/in/viviantao/" target="_blank" className="text-white dark:text-black md:text-lg hover:underline underline-offset-4">linkedin.com/in/viviantao</a>
+            <a href="https://www.linkedin.com/in/viviantao/" target="_blank" className="text-white dark:text-black md:text-lg hover:underline underline-offset-4 cursor-custom">linkedin.com/in/viviantao</a>
           </div>
 
         {/* contact form */}
@@ -139,7 +139,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Your name"
-              className='bg-white-light dark:bg-black-dark py-4 px-6 placeholder:text-secondary text-black-light dark:text-white-dark rounded-lg outline-none border-none font-medium'
+              className='bg-white-light dark:bg-black-dark py-4 px-6 placeholder:text-secondary text-black-light dark:text-white-dark rounded-lg outline-none border-none font-medium cursor-custom'
             />
           </label>
 
@@ -151,7 +151,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="Your email address"
-              className='bg-white-light dark:bg-black-dark py-4 px-6 placeholder:text-secondary text-black-light dark:text-white-dark rounded-lg outline-none border-none font-medium'
+              className='bg-white-light dark:bg-black-dark py-4 px-6 placeholder:text-secondary text-black-light dark:text-white-dark rounded-lg outline-none border-none font-medium cursor-custom'
             />
           </label>
 
@@ -163,14 +163,14 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='Your message'
-              className='bg-white-light dark:bg-black-dark py-4 px-6 placeholder:text-secondary text-black-light dark:text-white-dark rounded-lg outline-none border-none font-medium'
+              className='bg-white-light dark:bg-black-dark py-4 px-6 placeholder:text-secondary text-black-light dark:text-white-dark rounded-lg outline-none border-none font-medium cursor-custom'
             />
           </label>
 
           {/* submit button */}
           <button
             type='submit'
-            className='btn bg-tertiary py-3 px-8 rounded-xl w-fit text-black-light display-font font-bold shadow-md shadow-black animate-bounce'
+            className='btn bg-tertiary py-3 px-8 rounded-xl w-fit text-black-light display-font font-bold shadow-md shadow-black animate-bounce cursor-custom'
           >
             {loading ? "Sending..." : "Send"}
           </button>

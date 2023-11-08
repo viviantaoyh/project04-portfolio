@@ -35,6 +35,7 @@ import ticTacToe from "./projects/Tic-Tac-Toe.png";
 import wishJourney from "./projects/wishJourney.png";
 import ServoLight from "./projects/Servo-Light.png";
 import ServoDark from "./projects/Servo-Dark.png";
+import portfolio from "./projects/portfolio-dark.png";
 
 export {
   darkLogo,
@@ -68,5 +69,6 @@ export {
   wishJourney,
   ServoLight,
   ServoDark,
+  portfolio,
   picture
 };

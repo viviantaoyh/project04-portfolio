@@ -24,6 +24,7 @@ import {
     wishJourney,
     ServoLight,
     ServoDark,
+    portfolio,
     threejs,
   } from "../assets";
   
@@ -272,7 +273,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: portfolio,
       source_code_link: "https://github.com/viviantaoyh/project04-portfolio",
       demo_link: "https://github.com/"
     },

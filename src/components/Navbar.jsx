@@ -35,7 +35,7 @@ const Navbar = () => {
           <img 
             src={isdarkMode? darkLogo : lightLogo} 
             alt="logo" 
-            className="w-10 h-10 object-contain" />
+            className="w-10 h-10 object-contain cursor-custom" />
           {/* <p className="text-black-light dark:text-white-dark text-[18px] font-bold cursor-pointer hover:text-secondary dark:hover:text-secondary">Vivian Tao.</p> */}
         </Link>
 
@@ -48,16 +48,16 @@ const Navbar = () => {
                 active === link.title
                 ? "text-secondary"
                 : "text-black-light dark:text-white-dark"
-              } hover:text-secondary dark:hover:text-secondary text-[18px] font-medium cursor-pointer`}
+              } hover:text-secondary dark:hover:text-secondary text-[18px] font-medium`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`} className="cursor-custom">{link.title}</a>
             </li>
           ))}
           
           {/* Button to toggle dark mode */}
           <button
-            className="text-black-light dark:text-white-dark dark:hover:text-secondary cursor-pointer hover:text-secondary"
+            className="text-black-light dark:text-white-dark dark:hover:text-secondary cursor-pointer hover:text-secondary cursor-custom"
             onClick={toggleDarkMode}
           >
             {isdarkMode 
@@ -73,11 +73,11 @@ const Navbar = () => {
           {/* Toggle Button */}
           {isdarkMode 
           ? (toggle 
-              ? <AiOutlineClose className="w-[28px] h-[28px] object-contain cursor-pointer dark:text-white" onClick={() => setToggle(!toggle)}/> 
-              : <AiOutlineMenu className="w-[28px] h-[28px] object-contain cursor-pointer dark:text-white" onClick={() => setToggle(!toggle)}/>) 
+              ? <AiOutlineClose className="w-[28px] h-[28px] object-contain cursor-pointer dark:text-white cursor-custom" onClick={() => setToggle(!toggle)}/> 
+              : <AiOutlineMenu className="w-[28px] h-[28px] object-contain cursor-pointer dark:text-white cursor-custom" onClick={() => setToggle(!toggle)}/>) 
           : (toggle 
-              ? <AiOutlineClose className="w-[28px] h-[28px] object-contain cursor-pointer" onClick={() => setToggle(!toggle)}/> 
-              : <AiOutlineMenu className="w-[28px] h-[28px] object-contain cursor-pointer" onClick={() => setToggle(!toggle)}/>)} 
+              ? <AiOutlineClose className="w-[28px] h-[28px] object-contain cursor-pointer cursor-custom" onClick={() => setToggle(!toggle)}/> 
+              : <AiOutlineMenu className="w-[28px] h-[28px] object-contain cursor-pointer cursor-custom" onClick={() => setToggle(!toggle)}/>)} 
 
 
           {/* Toggle NavLinks */}
@@ -96,12 +96,12 @@ const Navbar = () => {
                   setActive(link.title);
                 }}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                <a href={`#${link.id}`} className="cursor-custom">{link.title}</a>
               </li>
             ))}
             {/* Button to toggle dark mode */}
             <button
-              className="text-white cursor-pointer hover:text-secondary"
+              className="text-white cursor-pointer hover:text-secondary cursor-custom"
               onClick={toggleDarkMode}
             >
               {isdarkMode 

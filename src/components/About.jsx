@@ -39,7 +39,6 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>About.</h2>
@@ -56,9 +55,9 @@ const About = () => {
 
         <button
             type="button"
-            className='btn mt-10 animate-bounce font-bold'
+            className='btn mt-10 animate-bounce font-bold cursor-custom'
         >
-            <a href="">View Resume</a>
+            <a href="" className="cursor-custom">View Resume</a>
         </button>
         </motion.p>
 

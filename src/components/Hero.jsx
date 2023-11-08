@@ -42,7 +42,7 @@ const Hero = () => {
               VIVIAN <br />
               <span className="display-font ml-20 pl-10">TAO</span>
             </h2>
-            <a href="#about" className="ml-20 pl-10 text-lg text-accent-dark display-font hidden xl:inline-block animate-pulse border px-9 py-2 rounded-full bg-transparent" style={{ marginRight: `${scrollValue * 4}px` }}>Full-Stack Software Developer</a>
+            <a href="#about" className="ml-20 pl-10 text-lg text-accent-dark display-font hidden xl:inline-block animate-pulse border px-9 py-2 rounded-full bg-transparent cursor-custom" style={{ marginRight: `${scrollValue * 4}px` }}>Full-Stack Software Developer</a>
 
             {/* invisible buffer */}
             <a className="ml-20 pl-10 text-lg text-accent-dark display-font hidden xl:block opacity-0 hover:underline underline-offset-4 border px-8 py-5 rounded-full bg-transparent" style={{ marginRight: `${scrollValue * 4}px` }}>Explore</a>
@@ -56,7 +56,7 @@ const Hero = () => {
         {/* Scroll down indicator icon */}
         <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-20">
           <a href="#about">
-            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 cursor-custom">
               <motion.div 
                 animate={{
                   y: [0, 24, 0]

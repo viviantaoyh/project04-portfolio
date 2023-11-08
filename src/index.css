@@ -19,6 +19,14 @@ html {
   /* scroll-snap-type: y mandatory; */
 }
 
+body {
+  cursor: url("./assets/cursor.svg"), auto;
+}
+
+.cursor-custom {
+  cursor: url("./assets/pointer.svg"), auto;
+}
+
 /* Apply "Merriweather" font to specific elements or classes */
 .display-font {
   font-family: 'Merriweather', serif;
