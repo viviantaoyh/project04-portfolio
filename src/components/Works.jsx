@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
 import { Carousel } from '@mantine/carousel';
@@ -9,6 +9,7 @@ import { github, open } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";  // project data
 import { fadeIn, textVariant } from "../utils/motion";
+import { client } from "../client";
 
 // define and style each project card
 const ProjectCard = ({
@@ -20,7 +21,18 @@ const ProjectCard = ({
   source_code_link,
   demo_link
 }) => {
+
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "project"]';
+
+    client.fetch(query)
+    .then((data) => setProjects(data))
+  },[])
+
   return (
+
     // define animation
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
 
@@ -30,7 +42,7 @@ const ProjectCard = ({
         <div className='relative w-full h-[230px]'>
           {/* project screenshot */}
           <img
-            src={image}
+            src={projects.image}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
@@ -38,7 +50,7 @@ const ProjectCard = ({
           {/* gitHub icon and open that link in new window*/}
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
-                onClick={() => window.open(source_code_link, "_blank")}
+                onClick={() => window.open(projects.linkToGithub, "_blank")}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
               >
                 <img
@@ -51,7 +63,7 @@ const ProjectCard = ({
             {/* demo link */}
             <div className='absolute top-0 right-11 flex justify-end card-img_hover'>
               <div
-                onClick={() => window.open(demo_link, "_blank")}
+                onClick={() => window.open(projects.linkToBuild, "_blank")}
                 className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
               >
                 <img
@@ -66,19 +78,20 @@ const ProjectCard = ({
 
         {/* Project name and description */}
         <div className='mt-5'>
-          <h3 className='text-white dark:text-black-light font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-white dark:text-black display-font text-[14px]'>{description}</p>
+          <h3 className='text-white dark:text-black-light font-bold text-[24px]'>{projects.title}</h3>
+          <p className='mt-2 text-white dark:text-black display-font text-[14px]'>{projects.summary}</p>
         </div>
 
         {/* display tags */}
         <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
+          {projects.technologies?.map((tag, idx) => (
             <p
-              key={`${name}-${tag.name}`}
+              // key={`${name}-${tag.name}`}
+              key={idx}
               className={`text-[14px] text-tertiary display-font`}
               // className={`text-[14px] ${tag.color}`}
             >
-              #{tag.name}
+              #{tag}
             </p>
           ))}
         </div>
