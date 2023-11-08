@@ -260,11 +260,15 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "sanity.io",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "tailwindcss",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "mantine",
           color: "pink-text-gradient",
         },
       ],
