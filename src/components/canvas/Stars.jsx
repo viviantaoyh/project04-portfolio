@@ -1,9 +1,9 @@
 import { useState, useRef, Suspense } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial, Preload } from "@react-three/drei";
-import * as random from "maath/random/dist/maath-random.esm";
+import { Canvas, useFrame } from "@react-three/fiber";  // create canva & animation
+import { Points, PointMaterial, Preload } from "@react-three/drei"; // handle particles, materials and preload assests
+import * as random from "maath/random/dist/maath-random.esm"; // generate random points
 
-// create the stars model from scratch
+// create the stars model
 const Stars = (props) => {
   const ref = useRef();
 

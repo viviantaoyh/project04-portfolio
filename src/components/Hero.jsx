@@ -1,14 +1,13 @@
 import React, { useState, useEffect, Suspense } from 'react'
 import { motion } from 'framer-motion';  // animations
 
-import { styles } from '../styles'
-import { ComputersCanvas } from './canvas';  // from canvas > index.js
-
 import mountainsFront from "../assets/hero/mountainsFront.png"
 import mountainsBehind from "../assets/hero/mountainsBehind.png"
 import moon from "../assets/hero/moon.png"
 import stars from "../assets/hero/stars.png"
 
+import { styles } from '../styles'
+import { ComputersCanvas } from './canvas';  // from canvas > index.js
 import CanvasLoader from "./Loader";
 
 const Hero = () => {

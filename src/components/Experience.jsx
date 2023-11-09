@@ -23,7 +23,7 @@ const ExperienceCard = ({ experience }) => {
         color: "#333333",
         boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)"
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid  #B8B0E5" }}
 
       // experience date
       date={experience.date}

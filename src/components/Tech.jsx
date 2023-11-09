@@ -37,7 +37,7 @@ const Tech = () => {
       </h2>
     </motion.div>
     
-    {/* balls container */}
+    {/* skill cards container */}
     <div className='mt-10 flex flex-row flex-wrap justify-center gap-10'>
 
       {/* loop through all tech */}
