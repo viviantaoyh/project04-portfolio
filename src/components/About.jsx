@@ -57,7 +57,7 @@ const About = () => {
             type="button"
             className='btn mt-10 animate-bounce font-bold cursor-custom'
         >
-            <a href="" className="cursor-custom">View Resume</a>
+            <a href="https://drive.google.com/file/d/1ZJ3XIICh0CDhD9rtsg9tZbODcjv6zxs6/view?usp=sharing" target="_blank" className="cursor-custom">View Resume</a>
         </button>
         </motion.p>
 
