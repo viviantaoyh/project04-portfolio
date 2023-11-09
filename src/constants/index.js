@@ -25,6 +25,7 @@ import {
     ServoLight,
     ServoDark,
     portfolio,
+    comingSoon,
     threejs,
   } from "../assets";
   
@@ -170,6 +171,37 @@ import {
   
   const projects = [
     {
+      name: "Personal Portfolio",
+      description:
+        "A web showcase driven by React and Javascript. Featuring a starry landing page, web/app services, and projects with TailwindCSS. Immerse in 3D, toggle dark mode, and connect seamlessly. A fusion of tech and creativity. I expanded my expertise in UX/UI, responsive design, and API-driven headless CMS while crafting this project.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "green-text-gradient",
+        },
+        {
+          name: "framer-motion",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "contentful",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+        
+      ],
+      image: portfolio,
+      source_code_link: "https://github.com/viviantaoyh/project04-portfolio",
+      demo_link: "https://viviantao.surge.sh/"
+    },
+    {
       name: "Servo App",
       description:
         "The Servo App, a collaborative project by a team of five, focuses on creating an intuitive Single Page Application (SPA) for locating petrol stations via geographical coordinates. It utilizes JavaScript, Node.js, Express, Postgres, and RESTful APIs to offer users a comprehensive experience, pinpointing fuel stations and providing insights into fuel pricing and station statistics.",
@@ -197,7 +229,7 @@ import {
       ],
       image: ServoLight,
       source_code_link: "https://github.com/viviantaoyh/project03-servo-app",
-      demo_link: "https://github.com/viviantaoyh/project03-servo-app"
+      demo_link: ""
     },
     {
       name: "WishJourney",
@@ -232,7 +264,7 @@ import {
     {
       name: "Tic-Tac-Toe",
       description:
-        "This project presents a contemporary take on the classic 'Tic-Tac-Toe' game. Crafted with HTML, CSS, and JavaScript, it seamlessly combines modern gaming experience with the enduring appeal of the original. It's easy to play: select a cell, take turns marking 'X' or 'O,' and aim to achieve a row of three. Enjoy this blend of nostalgia and modern gaming convenience. ",
+        "This project presents a contemporary take on the classic 'Tic-Tac-Toe' game. Crafted with HTML, CSS, and JavaScript, it seamlessly combines modern gaming experience with the enduring appeal of the original. It's easy to play: select a cell, take turns marking 'X' or 'O,' and aim to achieve a row of three. Enjoy this blend of nostalgia and modern gaming convenience.",
       tags: [
         {
           name: "html",
@@ -252,7 +284,7 @@ import {
       demo_link: "https://viviantaoyh.github.io/project01-tic-tac-toe/"
     },
     {
-      name: "Portfolio",
+      name: "Burgulator",
       description:
         "Coming Soon.",
       tags: [
@@ -261,21 +293,17 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "sanity.io",
+          name: "css",
           color: "green-text-gradient",
         },
         {
-          name: "tailwindcss",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "mantine",
+          name: "javascript",
           color: "pink-text-gradient",
         },
       ],
-      image: portfolio,
-      source_code_link: "https://github.com/viviantaoyh/project04-portfolio",
-      demo_link: "https://github.com/"
+      image: comingSoon,
+      source_code_link: "",
+      demo_link: ""
     },
   ];
 

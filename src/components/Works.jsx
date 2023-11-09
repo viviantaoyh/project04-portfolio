@@ -39,7 +39,7 @@ const ProjectCard = ({
 
           {/* gitHub icon and open that link in new window*/}
           <div className='absolute inset-0 flex justify-end m-3'>
-              <div
+                {source_code_link && <div
                 onClick={() => window.open(source_code_link, "_blank")}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer cursor-custom'
               >
@@ -48,10 +48,10 @@ const ProjectCard = ({
                   alt='source code'
                   className='w-1/2 h-1/2 object-contain'
                 />
-              </div>
+              </div>}
 
             {/* demo link */}
-            <div className='absolute top-0 right-11 flex justify-end'>
+            {demo_link && <div className='absolute top-0 right-11 flex justify-end'>
               <div
                 onClick={() => window.open(demo_link, "_blank")}
                 className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer cursor-custom'
@@ -62,7 +62,7 @@ const ProjectCard = ({
                   className='w-1/2 h-1/2 object-contain'
                 />
               </div>
-            </div>
+            </div>}
           </div>
         </div>
 
@@ -135,7 +135,7 @@ const Works = () => {
           
           <Carousel.Slide key={`project-${index}`} index={index} className="rounded-lg h-full pr-0 md:mr-4 mr-2">
 
-              <ProjectCard {...project} />
+              <ProjectCard {...project} key={`project-${index}`} index={index} />
 
           </Carousel.Slide>
         ))}

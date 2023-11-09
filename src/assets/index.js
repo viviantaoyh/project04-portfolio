@@ -36,6 +36,7 @@ import wishJourney from "./projects/wishJourney.png";
 import ServoLight from "./projects/Servo-Light.png";
 import ServoDark from "./projects/Servo-Dark.png";
 import portfolio from "./projects/portfolio-dark.png";
+import comingSoon from "./projects/Coming-Soon.png";
 
 export {
   darkLogo,
@@ -70,5 +71,6 @@ export {
   ServoLight,
   ServoDark,
   portfolio,
+  comingSoon,
   picture
 };
