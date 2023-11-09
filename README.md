@@ -3,9 +3,9 @@ Thank you for taking the time to visit my personal portfolio website and explore
 
 💎 [Click here](https://viviantao.surge.sh/) to check it out!
 
-📢 Tools used: React, Vite, JavaScript, TailwindCSS
+📢 **Tools used:** React, Vite, JavaScript, TailwindCSS
 
-🖥 Dependencies Used: 
+🖥 **Dependencies Used:** 
 - React Icons for icons
 - React Tilt for tilt effect in about section
 - React Vertical Timeline Component for the work experience timeline
@@ -20,7 +20,7 @@ Thank you for taking the time to visit my personal portfolio website and explore
 
 ![](/src/assets/projects/portfolio-dark.png)
 
----
+
 
 ## 🌈 Key Features
 As you venture through the starry night-themed landing page, you'll find a glimpse into who I am, the services I offer, the technologies I'm passionate about, and the projects that I've poured my heart and soul into. All of this is made possible with the magic of **React**, **Vite**, and **JavaScript**. ✨
@@ -48,10 +48,7 @@ My project is built with scalability and accessibility in mind, ensuring it look
 
 And yes, don't forget to toggle between light and dark modes for a personalized experience, all thanks to the versatility of **TailwindCSS** and **React Icons**.
 
-Thank you once again for being here. I hope you find inspiration, insight, and maybe even a touch of magic as you explore my portfolio. I look forward to connecting with you! 🌍
 
-
----
 
 ## 🏆 Reflecting on My Development Journey 
 
@@ -99,7 +96,7 @@ With these initial thoughts in place, I started on creating wireframes that serv
 - Blindly choosing popular options without considering compatibility and detailed documentation can lead to unexpected challenges.
 - A comprehensive understanding of the libraries and their interactions is crucial to prevent issues down the road.
 
----
+
 
 ## ✅ Future Features
 
@@ -109,3 +106,6 @@ With these initial thoughts in place, I started on creating wireframes that serv
 4. Add loading effect on page load.
 5. Extend the Contentful or other CMS integration to manage all website content, going beyond just projects, simplifying content management and ensuring real-time updates.
 6. Elevate the portfolio by converting it into a Progressive Web App, offering offline access, enhanced performance, and an app-like experience for users.
+
+
+Thank you once again for being here. I hope you find inspiration, insight, and maybe even a touch of magic as you explore my portfolio. I look forward to connecting with you! 🌍
