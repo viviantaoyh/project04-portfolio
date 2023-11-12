@@ -7,7 +7,6 @@ import moon from "../assets/hero/moon.png"
 import stars from "../assets/hero/stars.png"
 
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas';  // from canvas > index.js
 import CanvasLoader from "./Loader";
 
 const Hero = () => {

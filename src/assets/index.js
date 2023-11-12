@@ -28,7 +28,6 @@ import freelance from "./company/freelance.png";
 import opc from "./company/opc.png";
 import agb from "./company/agb.png";
 
-import carrent from "./carrent.png";
 import picture from "./picture.jpg";
 
 import ticTacToe from "./projects/Tic-Tac-Toe.png";
@@ -65,7 +64,6 @@ export {
   freelance,
   opc,
   agb,
-  carrent,
   ticTacToe,
   wishJourney,
   ServoLight,

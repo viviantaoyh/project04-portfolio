@@ -19,7 +19,6 @@ import {
     opc,
     agb,
     freelance,
-    carrent,
     ticTacToe,
     wishJourney,
     ServoLight,
